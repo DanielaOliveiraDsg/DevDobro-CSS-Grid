@@ -1,0 +1,73 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: "Roboto", serif;
+    font-weight: 300;
+}
+
+.peso700{
+    font-weight: 700;
+}
+
+.container{
+    background-color: #f7f7f7;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: "conteudo-aberto propaganda"
+    "conteudo-aberto playlist";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    grid-gap: 2rem 1.7rem;
+    padding: 3.5rem;
+}
+
+.conteudo-aberto{
+    grid-area: conteudo-aberto;
+    /* width: 543px; */
+    min-width: 375px;
+}
+
+.conteudo-aberto .thumb-aberto{
+    width: 100%;
+}
+
+.conteudo-aberto .descricao-aberto .titulo-aberto{
+    font-size: 1.8rem;
+    margin: 1.2rem 0 .7rem 0;
+}
+
+.conteudo-aberto .descricao-aberto .dados-aberto{
+    font-size: 1.4rem;
+} 
+
+.conteudo-aberto .descricao-aberto .texto-aberto{
+    font-size: 1.6rem;
+    margin-top: .9rem;
+}
+
+.propaganda{
+    grid-area: propaganda; 
+}
+
+.playlist{
+    grid-area: playlist;
+    /* width: 270px;
+    max-width: 543px;  */
+}
+
+.playlist .video-sugerido{
+    display: flex;
+    gap: .4rem;
+    margin-bottom: 1.5rem;
+}
+
+.playlist .video-sugerido .descricao-sugerido .titulo-sugerido {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+}
+.playlist .video-sugerido .descricao-sugerido .dados-sugerido p{
+    font-size: 1.1rem;
+    padding-top: .5rem;
+}
